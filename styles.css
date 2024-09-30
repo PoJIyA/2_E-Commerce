@@ -1,0 +1,425 @@
+:root {
+    --text-color: rgb(235, 235, 235);
+    --background-color: black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Avenir', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background-color: var(--background-color);
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav .right .lastone {
+    color: var(--background-blue);
+    background-color: var(--text-color);
+    padding: 5px 25px 5px 22px;
+  }
+
+nav .right .lastone:hover {
+    color: var(--background-blue);
+    background-color: grey;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+nav .right a i {
+    display: none;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+/* HOME-section */
+
+.home-section {
+    height: 700px;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(images/berries.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.home-section .title {
+    margin-top: 80px;
+}
+
+.home-section h1 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 56pt;
+}
+
+.home-section h3 {
+    text-align: center;
+    color: grey;
+    font-size: 24pt;
+}
+
+/* ABOUT-section */
+
+.about-section {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    color: var(--text-color);
+}
+
+.about-section p {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 22px;
+}
+
+/* SHOP-section */
+
+.shop-section {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.shop-section .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    color: var(--text-color);
+    height: 500px;
+}
+
+.shop-section .intro p {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shop-section .product {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.shop-section .product .text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.shop-section .product .text li {
+    padding-bottom: 15px;
+}
+
+.shop-section .product .text h2,p {
+    max-width: 500px;
+    margin: 0 auto;
+    color: var(--text-color)
+}
+
+.shop-section .product .text button {
+    font-size: 16px;
+    font-family: 'Avenir', sans-serif;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.shop-section .product .text button:hover {
+    background-color: gray;
+}
+
+.shop-section .product .cafe {
+    width: 50%;
+    background-image: url(images/cofe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.shop-section .product .spices {
+    width: 50%;
+    background-image: url(images/ginger.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.shop-section .product .berries {
+    width: 50%;
+    background-image: url(images/berries.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.shop-section .product .kitkat {
+    width: 50%;
+    background-image: url(images/choco.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.shop-section .product .noodles {
+    width: 50%;
+    background-image: url(images/noodle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* TEAM */
+
+.whyus-section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+
+  .whyus-section .teams {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    padding-top: 32px;
+  }
+
+  .whyus-section .teams .teammate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 16px;
+  }
+
+  .whyus-section img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .whyus-section p {
+    text-align: center;
+  }
+
+  /*CONTACT*/
+
+  /* SECTION 4: Contact */
+
+.contact-section {
+    padding: 100px;
+    color: var(--text-color);
+  }
+  
+  .contact-section h2 {
+    font-size: 35px;
+  }
+  
+  .contact-section .group {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+  }
+  
+  .contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section .group form input,
+  .contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--text-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+  }
+  
+  .contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: gray;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+  }
+  
+  .contact-section .group form button:hover {
+    background-color: var(--text-color);
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: 400px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    color: var(--text-color);
+  }
+
+  footer .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  footer .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    color: var(--text-color);
+  }
+
+  footer .icons i {
+    width: 30px;
+    height: 30px;
+    color: var(--text-color);
+    display: block;
+  }
+
+  footer .contacts a:hover {
+    color: gray;
+  }
+
+
+  @media (max-width: 1070px) {
+
+    nav {
+        padding: 0 0px 0px 60px;
+      }
+
+      nav .left {
+        font-size: 20px;
+      }
+    
+      nav .right a {
+        font-size: 22px;
+      }
+    
+      nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+      }
+    
+      nav .right a span {
+        display: none;
+      }
+    
+      nav .right a i {
+        display: block;
+        color: #fbfcff;
+      }
+    
+      nav .left a {
+        font-size: smaller;
+      }
+    
+      .home-section h1 {
+        text-align: center;
+        color: var(--text-color);
+        font-size: 32pt;
+    }
+    
+    .home-section h3 {
+        text-align: center;
+        color: grey;
+        font-size: 18pt;
+        padding: 0 15px;
+    }
+
+    .whyus-section .teams {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        padding-top: 32px;
+      }
+
+      .shop-section .product .text h2,p {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 30px;
+        color: var(--text-color)
+         }
+    
+
+  }
